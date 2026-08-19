@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K-CHIK Fried Chicken</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Kanit',sans-serif;
+}
+
+body{
+    background:#fff8ef;
+    color:#444;
+}
+
+header{
+    background:linear-gradient(135deg,#ff9f1c,#ffcc29);
+    color:white;
+    padding:70px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:60px;
+    font-weight:700;
+}
+
+header p{
+    font-size:24px;
+    margin-top:10px;
+}
+
+.hero{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+    gap:40px;
+}
+
+.chicken{
+    width:280px;
+    height:280px;
+    background:#FFD54F;
+    border-radius:50%;
+    position:relative;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.eye{
+    position:absolute;
+    width:18px;
+    height:18px;
+    background:#333;
+    border-radius:50%;
+    top:95px;
+}
+
+.eye.left{ left:80px;}
+.eye.right{ right:80px;}
+
+.beak{
+    position:absolute;
+    width:40px;
+    height:30px;
+    background:#ff7b00;
+    left:120px;
+    top:125px;
+    clip-path:polygon(50% 100%,0 0,100% 0);
+}
+
+.cheek{
+    position:absolute;
+    width:25px;
+    height:25px;
+    background:#ffb5b5;
+    border-radius:50%;
+    top:135px;
+}
+
+.cheek.left{left:45px;}
+.cheek.right{right:45px;}
+
+.wing{
+    position:absolute;
+    width:70px;
+    height:90px;
+    background:#FFC107;
+    border-radius:50%;
+}
+
+.wing.left{
+    left:-20px;
+    top:130px;
+    transform:rotate(-30deg);
+}
+
+.wing.right{
+    right:-20px;
+    top:130px;
+    transform:rotate(30deg);
+}
+
+.hero-text{
+    max-width:500px;
+}
+
+.hero-text h2{
+    color:#ff6600;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#ff6600;
+    color:white;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:20px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ff3d00;
+}
+
+.menu{
+    padding:70px 20px;
+    text-align:center;
+}
+
+.menu h2{
+    color:#ff6600;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.card{
+    background:white;
+    width:260px;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.food{
+    font-size:70px;
+}
+
+.card h3{
+    margin:15px 0;
+    color:#ff6600;
+}
+
+.price{
+    font-size:28px;
+    color:#e53935;
+    font-weight:bold;
+}
+
+footer{
+    background:#ff9f1c;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:42px;
+}
+
+.hero-text h2{
+font-size:34px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<h1>🐥 K-CHIK</h1>
+
+<p>ไก่ทอดอ้วนๆ น่ารักๆ กรอบนอก ฉ่ำใน อร่อยทุกคำ</p>
+
+</header>
+
+<section class="hero">
+
+<div class="chicken">
+
+<div class="eye left"></div>
+<div class="eye right"></div>
+
+<div class="beak"></div>
+
+<div class="cheek left"></div>
+<div class="cheek right"></div>
+
+<div class="wing left"></div>
+<div class="wing right"></div>
+
+</div>
+
+<div class="hero-text">
+
+<h2>🍗 กรอบ อร่อย ทุกชิ้น</h2>
+
+<p>
+
+ไก่ทอดสูตรพิเศษของ K-CHIK
+ทอดสดใหม่ทุกออเดอร์
+หนังกรอบ เนื้อนุ่ม ฉ่ำ
+เสิร์ฟพร้อมซอสสูตรเด็ด
+ที่จะทำให้คุณหยุดกินไม่ได้!
+
+</p>
+
+<a href="#" class="btn">
+สั่งเลย
+</a>
+
+</div>
+
+</section>
+
+<section class="menu">
+
+<h2>เมนูยอดนิยม</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="food">🍗</div>
+
+<h3>ไก่ทอดกรอบ</h3>
+
+<p>กรอบนอก นุ่มใน</p>
+
+<div class="price">79.-</div>
+
+</div>
+
+<div class="card">
+
+<div class="food">🍟</div>
+
+<h3>เฟรนช์ฟรายส์</h3>
+
+<p>ทอดใหม่ทุกถาด</p>
+
+<div class="price">49.-</div>
+
+</div>
+
+<div class="card">
+
+<div class="food">🥤</div>
+
+<h3>เครื่องดื่ม</h3>
+
+<p>เย็น สดชื่น</p>
+
+<div class="price">29.-</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>🐥 K-CHIK Fried Chicken</h2>
+
+<p>กรอบ อร่อย สดใหม่ ทุกวัน</p>
+
+<p>Facebook | LINE | โทร 099-999-9999</p>
+
+</footer>
+
+</body>
+</html>
